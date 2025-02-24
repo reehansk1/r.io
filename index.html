@@ -3,116 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create Your Timetable</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+        }
+    </style>
 </head>
 <body>
-    <center><h1>TIME TABLE</h1></center>
-    <table border="5" cellspacing="2" align="center">
-    <tr>
-    <td align="center" height="10"
-    width="100"><br>
-    <b>Day/Period</b></br>
-    </td>
-    <td align="center" height="20"
-    width="100">
-    <b>I<br>9:30-10:20</b>
-    </td>
-    <td align="center" height="50"
-    width="100">
-    <b>II<br>10:20-11:10</b>
-    </td>
-    <td align="center" height="50"
-    width="100">
-    <b>III<br>11:10-12:00</b>
-    </td>
-    <td align="center" height="50"
-    width="100">
-    <b>12:00-12:40</b>
-    </td>
-    <td align="center" height="50"
-    width="100">
-    <b>IV<br>12:40-1:30</b>
-    </td>
-    <td align="center" height="50"
-    width="100">
-    <b>V<br>1:30-2:20</b>
-    </td>
-    <td align="center" height="50"
-    width="100">
-    <b>VI<br>2:20-3:10</b>
-    </td>
-    <td align="center" height="50"
-    width="100">
-    <b>VII<br>3:10-4:00</b>
-    </td>
-    </tr>
-    <tr>
-    <td align="center" height="50">
-    <b>Monday</b></td>
-    <td align="center" height="50">BDA</td>
-    <td colspan="3" align="center" height="50">WT LAB</td>
-    <td rowspan="6" align="center" height="50">
-    <h2>L<br>U<br>N<br>C<br>H</h2>
-    </td>
-    <td align="center" height="50">ML</td>
-    <td align="center" height="50">LIB</td>
-    <td align="center" height="50">BDA</td> 
-    </tr>
-    <tr>
-    <td align="center" height="50">
-    <b>Tuesday</b>
-    </td>
-    <td align="center" height="50">WT</td>
-    <td align="center" height="50">ML</td>
-    <td align="center" height="50">BDA</td>
-    <td align="center" height="50">NSC</td>
-    <td align="center" height="50">BDA</td>
-    <td align="center" height="50">NSC</td>
-    <td align="center" height="50">ML</td>
-    </tr>
-    <tr>
-    <td align="center" height="50">
-    <b>Wednesday</b>
-    </td>
-    <td align="center" height="50">NSC</td>
-    <td align="center" height="50">ML</td>
-    <td align="center" height="50">BDA</td>
-    <td align="center" height="50">WT</td>
-    <td align="center" height="50">CBE</td>
-    <td colspan="2" align="center"
-    height="50">SS</td>
-    </tr>
-    <tr>
-    <td align="center" height="50">
-    <b>Thursday</b>
-    </td>
-    <td align="center" height="50">WT</td>
-    <td align="center" height="50">NSC</td>
-    <td align="center" height="50">BDA</td>
-    <td align="center" height="50">WT</td>
-    <td colspan="3" align="center" height="50">NSC LAB</td>
-    <tr>
-        <td align="center" height="50">
-      <b>Friday</b>
-    </td>
-    <td align="center" height="50">ML</td>
-    <td colspan="3" align="center" height="50">ML LAB</td>
-    <td align="center" height="50">ML</td>
-    <td align="center" height="50">NSC</td>
-    <td align="center" height="50">WT</td>
+
+    <center><h1>Create Your Own Time Table</h1></center>
     
-    <tr>
-        <td align="center" height="50">
-        <b>Saturday</b>
-    </td>
-    <td align="center" height="50">NSC</td>
-    <td align="center" height="50">WT</td>
-    <td align="center" height="50">ML</td>
-    <td align="center" height="50">CBE</td>
-    <td align="center" height="50">WT</td>
-    <td align="center" height="50">NSC</td>
-    <td align="center" height="50">BDA</td>
-    <tr>
-    </table> 
+    <!-- Form for entering timetable data -->
+    <form id="timetableForm">
+        <table>
+            <tr>
+                <td>Day/Period</td>
+                <td>Period I</td>
+                <td>Period II</td>
+                <td>Period III</td>
+                <td>Period IV</td>
+                <td>Period V</td>
+                <td>Period VI</td>
+                <td>Period VII</td>
+            </tr>
+            <tr>
+                <td><b>Monday</b></td>
+                <td><input type="text" name="monday1"></td>
+                <td><input type="text" name="monday2"></td>
+                <td><input type="text" name="monday3"></td>
+                <td><input type="text" name="monday4"></td>
+                <td><input type="text" name="monday5"></td>
+                <td><input type="text" name="monday6"></td>
+                <td><input type="text" name="monday7"></td>
+            </tr>
+            <tr>
+                <td><b>Tuesday</b></td>
+                <td><input type="text" name="tuesday1"></td>
+                <td><input type="text" name="tuesday2"></td>
+                <td><input type="text" name="tuesday3"></td>
+                <td><input type="text" name="tuesday4"></td>
+                <td><input type="text" name="tuesday5"></td>
+                <td><input type="text" name="tuesday6"></td>
+                <td><input type="text" name="tuesday7"></td>
+            </tr>
+            <tr>
+                <td><b>Wednesday</b></td>
+                <td><input type="text" name="wednesday1"></td>
+                <td><input type="text" name="wednesday2"></td>
+                <td><input type="text" name="wednesday3"></td>
+                <td><input type="text" name="wednesday4"></td>
+                <td><input type="text" name="wednesday5"></td>
+                <td><input type="text" name="wednesday6"></td>
+                <td><input type="text" name="wednesday7"></td>
+            </tr>
+            <tr>
+                <td><b>Thursday</b></td>
+                <td><input type="text" name="thursday1"></td>
+                <td><input type="text" name="thursday2"></td>
+                <td><input type="text" name="thursday3"></td>
+                <td><input type="text" name="thursday4"></td>
+                <td><input type="text" name="thursday5"></td>
+                <td><input type="text" name="thursday6"></td>
+                <td><input type="text" name="thursday7"></td>
+            </tr>
+            <tr>
+                <td><b>Friday</b></td>
+                <td><input type="text" name="friday1"></td>
+                <td><input type="text" name="friday2"></td>
+                <td><input type="text" name="friday3"></td>
+                <td><input type="text" name="friday4"></td>
+                <td><input type="text" name="friday5"></td>
+                <td><input type="text" name="friday6"></td>
+                <td><input type="text" name="friday7"></td>
+            </tr>
+            <tr>
+                <td><b>Saturday</b></td>
+                <td><input type="text" name="saturday1"></td>
+                <td><input type="text" name="saturday2"></td>
+                <td><input type="text" name="saturday3"></td>
+                <td><input type="text" name="saturday4"></td>
+                <td><input type="text" name="saturday5"></td>
+                <td><input type="text" name="saturday6"></td>
+                <td><input type="text" name="saturday7"></td>
+            </tr>
+        </table>
+        <br>
+        <center><button type="button" onclick="updateTimetable()">Update Timetable</button></center>
+    </form>
+
+    <!-- Display the updated timetable -->
+    <center>
+        <h2>Updated Timetable</h2>
+        <table id="timetable">
+            <tr>
+                <td>Day/Period</td>
+                <td>Period I</td>
+                <td>Period II</td>
+                <td>Period III</td>
+                <td>Period IV</td>
+                <td>Period V</td>
+                <td>Period VI</td>
+                <td>Period VII</td>
+            </tr>
+            <tr>
+                <td><b>Monday</b></td>
+                <td id="monday1">--</td>
+                <td id="monday2">--</td>
+                <td id="monday3">--</td>
+                <td id="monday4">--</td>
+                <td id="monday5">--</td>
+                <td id="monday6">--</td>
+                <td id="monday7">--</td>
+            </tr>
+            <tr>
+                <td><b>Tuesday</b></td>
+                <td id="tuesday1">--</td>
+                <td id="tuesday2">--</td>
+                <td id="tuesday3">--</td>
+                <td id="tuesday4">--</td>
+                <td id="tuesday5">--</td>
+                <td id="tuesday6">--</td>
+                <td id="tuesday7">--</td>
+            </tr>
+            <tr>
+                <td><b>Wednesday</b></td>
+                <td id="wednesday1">--</td>
+                <td id="wednesday2">--</td>
+                <td id="wednesday3">--</td>
+                <td id="wednesday4">--</td>
+                <td id="wednesday5">--</td>
+                <td id="wednesday6">--</td>
+                <td id="wednesday7">--</td>
+            </tr>
+            <tr>
+                <td><b>Thursday</b></td>
+                <td id="thursday1">--</td>
+                <td id="thursday2">--</td>
+                <td id="thursday3">--</td>
+                <td id="thursday4">--</td>
+                <td id="thursday5">--</td>
+                <td id="thursday6">--</td>
+                <td id="thursday7">--</td>
+            </tr>
+            <tr>
+                <td><b>Friday</b></td>
+                <td id="friday1">--</td>
+                <td id="friday2">--</td>
+                <td id="friday3">--</td>
+                <td id="friday4">--</td>
+                <td id="friday5">--</td>
+                <td id="friday6">--</td>
+                <td id="friday7">--</td>
+            </tr>
+            <tr>
+                <td><b>Saturday</b></td>
+                <td id="saturday1">--</td>
+                <td id="saturday2">--</td>
+                <td id="saturday3">--</td>
+                <td id="saturday4">--</td>
+                <td id="saturday5">--</td>
+                <td id="saturday6">--</td>
+                <td id="saturday7">--</td>
+            </tr>
+        </table>
+    </center>
+
+    <script>
+        function updateTimetable() {
+            const days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+            for (let i = 0; i < days.length; i++) {
+                for (let j = 1; j <= 7; j++) {
+                    let subject = document.querySelector(`[name='${days[i]}${j}']`).value;
+                    document.getElementById(`${days[i]}${j}`).innerText = subject ? subject : '--';
+                }
+            }
+        }
+    </script>
+
 </body>
 </html>
+
